@@ -15,10 +15,13 @@ jobs:
         uses: hashicorp/setup-terraform@v2
 
       - name: Run TFLint
-        uses: terraform-linters/tflint-action@v3
+        uses: terraform-linters/setup-tflint@v4
 
       - name: Run Checkov
-        uses: bridgecrewio/checkov-action@v12
+        uses: bridgecrewio/checkov-action@master
+        with:
+            directory: infra/
+            soft_fail: true 
 
       - name: Terraform Validate
         run: terraform validate

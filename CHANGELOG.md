@@ -14,4 +14,6 @@
 ### Added
 - Tag `Environment = "dev"` en recurso EC2 dentro de `main.tf`.
 
-
+## [1.0.1] - 2026-04-29
+### Added
+- Corrección en `pipeline.yml
