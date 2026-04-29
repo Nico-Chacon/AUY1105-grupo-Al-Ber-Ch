@@ -61,3 +61,12 @@ resource "aws_route_table_association" "rta" {
   subnet_id      = aws_subnet.AUY1105-duocapp-subnet.id
   route_table_id = aws_route_table.rt.id
 }
+resource "aws_instance" "example" {
+  ami           = var.ami
+  instance_type = "t2.micro"
+
+  tags = {
+    Name        = "AUV1105-duocapp-ec2"
+    Environment = "dev"   
+  }
+}

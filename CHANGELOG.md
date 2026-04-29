@@ -11,6 +11,18 @@
 - pipeline.yml con validaciones (TFLint, Checkov, Terraform, OPA)
 
 - se agrego la Internet Gateway y la route Table configurada
+## [1.0.1] - 2026-04-29
+### Added
+- Tag `Environment = "dev"` en recurso EC2 dentro de `main.tf`.
+
+## [1.0.2] - 2026-04-29
+### Added
+- Corrección en `pipeline.yml
+## [1.1.0] - 2026-04-28
+### Añadido
+- Mejora en las descripciones de variables para cumplimiento de nomenclatura.
+- Actualización de políticas OPA para validación de SSH y tipo de instancia.
+
 
 ## [1.2.0] - 2026-04-28
 
