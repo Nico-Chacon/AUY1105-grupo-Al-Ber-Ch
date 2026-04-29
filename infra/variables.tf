@@ -27,3 +27,8 @@ variable "ami_id" {
   description = "AMI de Ubuntu 24.04 LTS"
   default     = "ami-05cf1e9f73fbad2e2"
 }
+
+variable "instance_type" {
+  default     = "t2.micro"
+  description = "Tipo de instancia EC2 requerida por la politica de seguridad AUY1105"
+}
