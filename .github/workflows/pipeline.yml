@@ -1,0 +1,24 @@
+name: Terraform Quality & Security
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+
+      - name: Run TFLint
+        uses: terraform-linters/tflint-action@v3
+
+      - name: Run Checkov
+        uses: bridgecrewio/checkov-action@v12
+
+      - name: Terraform Validate
+        run: terraform validate
