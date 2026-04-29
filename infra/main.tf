@@ -43,3 +43,13 @@ resource "aws_instance" "AUY1105-duocapp-ec2" {
     Name = "AUY1105-duocapp-ec2"
   }
 }
+
+resource "aws_instance" "example" {
+  ami           = var.ami
+  instance_type = "t2.micro"
+
+  tags = {
+    Name        = "AUV1105-duocapp-ec2"
+    Environment = "dev"   
+  }
+}

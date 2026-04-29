@@ -10,6 +10,8 @@
 - policies/security.rego con reglas OPA
 - pipeline.yml con validaciones (TFLint, Checkov, Terraform, OPA)
 
-
+## [1.0.1] - 2026-04-29
+### Added
+- Tag `Environment = "dev"` en recurso EC2 dentro de `main.tf`.
 
 
