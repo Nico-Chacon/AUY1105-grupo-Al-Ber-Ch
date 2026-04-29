@@ -10,6 +10,9 @@
 - policies/security.rego con reglas OPA
 - pipeline.yml con validaciones (TFLint, Checkov, Terraform, OPA)
 
-
+## [1.1.0] - 2024-04-28
+### Añadido
+- Mejora en las descripciones de variables para cumplimiento de nomenclatura.
+- Actualización de políticas OPA para validación de SSH y tipo de instancia.
 
 
